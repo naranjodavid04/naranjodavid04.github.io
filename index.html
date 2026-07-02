@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Naranjo López — Ingeniería Matemática</title>
+  <meta name="description" content="David Naranjo López, estudiante de Ingeniería Matemática en la Universidad EAFIT. Optimización, aprendizaje automático y análisis de datos. Portafolio, proyectos y hoja de vida.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∇</text></svg>">
+</head>
+<body>
+
+  <!-- ======= NAV ======= -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#inicio">
+      <span class="nav__monogram">DN</span>
+      <span class="nav__brand-text">Naranjo&nbsp;López</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#perfil">Perfil</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#documentos">Documentos</a>
+      <a href="#contacto" class="nav__cta">Contacto</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="inicio">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="hero__math" aria-hidden="true">
+      <span class="hero__eq hero__eq--1">∂u/∂t = α∇²u</span>
+      <span class="hero__eq hero__eq--2">min f(x)  s.a.  g(x) ≤ 0</span>
+      <span class="hero__eq hero__eq--3">Σ σᵢ uᵢ vᵢᵀ</span>
+      <span class="hero__eq hero__eq--4">P(|X̄−μ| &gt; ε) → 0</span>
+    </div>
+
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__kicker anim" style="--d:0">Medellín, Colombia · Universidad EAFIT</p>
+        <h1 class="hero__name">
+          <span class="hero__name-line anim" style="--d:1">David</span>
+          <span class="hero__name-line anim" style="--d:2">Naranjo <em>López</em></span>
+        </h1>
+        <p class="hero__role anim" style="--d:3">Estudiante de <strong>Ingeniería Matemática</strong> — 6.º semestre</p>
+        <p class="hero__lede anim" style="--d:4">
+          Optimización, aprendizaje automático y análisis de datos.
+          Replico métodos de papers científicos, modelo datos financieros
+          colombianos y experimento con IA generativa en local.
+        </p>
+        <div class="hero__actions anim" style="--d:5">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="assets/docs/CV_David_Naranjo.pdf" download>Descargar CV <span class="btn__note">PDF</span></a>
+        </div>
+        <div class="hero__social anim" style="--d:6">
+          <a href="https://github.com/naranjodavid04" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            <span>naranjodavid04</span>
+          </a>
+          <a href="https://www.linkedin.com/in/david-naranjo-914328413/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 14.5 0h-13Zm2.9 13.5H2V6.2h2.4v7.3ZM3.2 5.2a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8ZM14 13.5h-2.4V9.9c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.6H6.6V6.2h2.3v1h.03c.32-.6 1.1-1.2 2.26-1.2 2.4 0 2.85 1.6 2.85 3.7v3.8Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:naranjolopez1234@gmail.com" aria-label="Correo">
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.026L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
+            <span>Correo</span>
+          </a>
+        </div>
+      </div>
+
+      <figure class="hero__portrait anim" style="--d:3">
+        <div class="hero__portrait-frame">
+          <img src="assets/retrato.jpeg" alt="Retrato de David Naranjo López" width="568" height="568">
+        </div>
+        <figcaption class="hero__portrait-caption">
+          <span class="mono">fig. 1</span> — David Naranjo López, 2026
+        </figcaption>
+        <div class="hero__stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="110" height="110">
+            <defs><path id="circ" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#circ">INGENIERÍA MATEMÁTICA · EAFIT · MEDELLÍN · </textPath></text>
+            <text x="60" y="70" text-anchor="middle" class="hero__stamp-sym">∇</text>
+          </svg>
+        </div>
+      </figure>
+    </div>
+
+    <a class="hero__scroll" href="#perfil" aria-label="Bajar al perfil">
+      <span class="mono">§ 01</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <main>
+    <!-- ======= 01 PERFIL ======= -->
+    <section class="section" id="perfil">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 01</span>
+        <h2 class="section__title">Perfil</h2>
+      </div>
+      <div class="perfil">
+        <div class="perfil__text reveal">
+          <p class="perfil__lead">
+            Estudiante de Ingeniería Matemática en EAFIT con base sólida en
+            <em>optimización, modelado matemático, aprendizaje automático y análisis de datos</em>.
+          </p>
+          <p>
+            Apasionado por la inteligencia artificial y su aplicación a problemas reales:
+            he replicado métodos de redes neuronales de papers científicos, implementado
+            modelos estadísticos sobre datos financieros colombianos y experimentado con
+            IA generativa de forma local. Curioso, autodidacta y orientado a resultados;
+            busco aportar rigor técnico y capacidad de aprendizaje rápido a retos de IA
+            en contextos organizacionales.
+          </p>
+        </div>
+        <dl class="perfil__stats reveal">
+          <div class="stat"><dt class="mono">Promedio</dt><dd>3.8<span class="stat__sub">/5.0</span></dd></div>
+          <div class="stat"><dt class="mono">Semestre</dt><dd>6.º</dd></div>
+          <div class="stat"><dt class="mono">Repositorios</dt><dd>9<span class="stat__sub">públicos</span></dd></div>
+          <div class="stat"><dt class="mono">Inglés</dt><dd>C1<span class="stat__sub">Aptis 181/200</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ======= 02 TRAYECTORIA ======= -->
+    <section class="section section--tinted" id="trayectoria">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 02</span>
+        <h2 class="section__title">Trayectoria</h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__date mono">Etapa escolar</span>
+          <div class="timeline__body">
+            <h3>Colegio Seminario Corazonista <span class="timeline__place">Medellín</span></h3>
+            <p>
+              Toda la formación escolar —primaria y bachillerato— en una misma
+              institución. Una base de disciplina y constancia que sigue marcando
+              mi forma de estudiar y trabajar.
+            </p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__date mono">2021 — 2022</span>
+          <div class="timeline__body">
+            <h3>Ingeniería Aeroespacial <span class="timeline__place">Universidad de Antioquia</span></h3>
+            <p>
+              Tres semestres de base en ciencias exactas, física avanzada e ingeniería.
+              Cambio de carrera orientado a profundizar en matemáticas y computación aplicada.
+            </p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__date mono">2023 — presente</span>
+          <div class="timeline__body">
+            <h3>Ingeniería Matemática <span class="timeline__place">Universidad EAFIT</span></h3>
+            <p>
+              Actualmente en 6.º semestre, con promedio acumulado de 3.8/5.0. Énfasis en
+              optimización convexa, sistemas dinámicos, estadística inferencial y teoría
+              de juegos. Herramientas de trabajo: Python, R, MATLAB y LaTeX.
+            </p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__date mono">Jun 2026</span>
+          <div class="timeline__body">
+            <h3>Certificación de inglés C1 <span class="timeline__place">British Council</span></h3>
+            <p>
+              Aptis General con puntaje final de 181/200, nivel C1 del Marco Común
+              Europeo de Referencia.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======= 03 PROYECTOS ======= -->
+    <section class="section" id="proyectos">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 03</span>
+        <h2 class="section__title">Proyectos</h2>
+        <a class="section__aside mono" href="https://github.com/naranjodavid04" target="_blank" rel="noopener">github.com/naranjodavid04 ↗</a>
+      </div>
+
+      <div class="projects">
+        <!-- Destacados -->
+        <article class="project project--featured reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Destacado · Estadística financiera</span>
+            <span class="project__lang"><i style="--c:#3572A5"></i>Python</span>
+          </div>
+          <h3 class="project__name">dashboard-financiero</h3>
+          <p class="project__desc">
+            Dashboard financiero de Colombia en Streamlit: descarga TRM, IBR y COLCAP desde
+            APIs públicas (datos.gov.co, SDMX del Banco de la República, Yahoo Finance) y aplica
+            modelos de riesgo — log-returns, GARCH(1,1)-t, VaR y Expected Shortfall por cuatro
+            métodos, backtesting de Kupiec y proyecciones Monte Carlo con fan charts
+            interactivos en Plotly.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/dashboard-financiero" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project project--featured reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Destacado · Deep learning + EDPs</span>
+            <span class="project__lang"><i style="--c:#3572A5"></i>Python</span>
+          </div>
+          <h3 class="project__name">proyecto_red_neuronal <span class="project__sub">POD-NN</span></h3>
+          <p class="project__desc">
+            Replicación del método POD-NN del paper de Hesthaven &amp; Ubbiali (2018),
+            <em>Non-intrusive reduced order modeling of nonlinear problems using neural
+            networks</em>, para la ecuación de Poisson 1D: construcción del espacio reducido POD,
+            entrenamiento de una red feed-forward y validación contra la solución de referencia,
+            con reducción sustancial del costo computacional.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/proyecto_red_neuronal" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project project--featured reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Destacado · Divulgación interactiva</span>
+            <span class="project__lang"><i style="--c:#3178c6"></i>TypeScript</span>
+          </div>
+          <h3 class="project__name">llm-visual</h3>
+          <p class="project__desc">
+            Página interactiva y animada que explica cómo funcionan los <em>Large Language
+            Models</em> por dentro: tokenización, atención y generación, paso a paso.
+            Desarrollada en TypeScript y desplegada en producción.
+          </p>
+          <div class="project__links">
+            <a href="https://llm-visual-kappa.vercel.app/" target="_blank" rel="noopener">Ver en vivo ↗</a>
+            <a href="https://github.com/naranjodavid04/llm-visual" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <!-- Resto -->
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Optimización multiobjetivo</span>
+            <span class="project__lang"><i style="--c:#3572A5"></i>Python</span>
+          </div>
+          <h3 class="project__name">Selección de modelo LLM vía API</h3>
+          <p class="project__desc">
+            Decisión multicriterio (AHP, TOPSIS, VIKOR, PROMETHEE, Borda, Condorcet) para
+            escoger el LLM óptimo para un microSaaS educativo, comparando modelos flagship
+            por costo por token, latencia y capacidad. Análisis de sensibilidad y reporte en LaTeX.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/Seleccion_modelo_LLM_via_API_para_microSaaS_educativo" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Estadística inferencial</span>
+            <span class="project__lang"><i style="--c:#198CE7"></i>R</span>
+          </div>
+          <h3 class="project__name">proyecto_estadistico</h3>
+          <p class="project__desc">
+            ¿Siguen los log-retornos diarios de la TRM una distribución normal? Análisis en R
+            con QQ-plots, boxplots, bootstrap y test de Jarque-Bera — cuatro técnicas
+            complementarias sin asumir normalidad a priori, con reporte completo en LaTeX.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/proyecto_estadistico" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Sistemas dinámicos</span>
+            <span class="project__lang"><i style="--c:#e16737"></i>MATLAB</span>
+          </div>
+          <h3 class="project__name">proyecto_sistemas_lineales</h3>
+          <p class="project__desc">
+            Simulación del modelo epidemiológico reducido de VIH-1 (Barão &amp; Lemos, 2007)
+            con análisis global de sensibilidad e incertidumbre (GSUA: Sobol, Saltelli-Jansen)
+            para identificar los parámetros críticos que gobiernan la carga viral.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/proyecto_sistemas_lineales" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Desarrollo web</span>
+            <span class="project__lang"><i style="--c:#ff5a03"></i>Astro</span>
+          </div>
+          <h3 class="project__name">nlarquitectura</h3>
+          <p class="project__desc">
+            Sitio portafolio bilingüe (ES/EN) para NL Arquitectura &amp; Construcción,
+            diseñado y desarrollado desde cero con Astro: galería de proyectos y animaciones.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/nlarquitectura" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">AgTech</span>
+            <span class="project__lang"><i style="--c:#8a8a8a"></i>—</span>
+          </div>
+          <h3 class="project__name">hato</h3>
+          <p class="project__desc">
+            Aplicación para monitoreo de ganado bovino: registro y seguimiento del hato
+            en el contexto ganadero colombiano.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/hato" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Algoritmia</span>
+            <span class="project__lang"><i style="--c:#b07219"></i>Java</span>
+          </div>
+          <h3 class="project__name">traveling_salesman_problem</h3>
+          <p class="project__desc">
+            Implementaciones del problema del agente viajero (TSP) como ejercicio de
+            algoritmia y optimización combinatoria en varios lenguajes.
+          </p>
+          <div class="project__links">
+            <a href="https://github.com/naranjodavid04/traveling_salesman_problem" target="_blank" rel="noopener">Repositorio ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Proyecto personal</span>
+            <span class="project__lang"><i style="--c:#ED1C24"></i>ROCm</span>
+          </div>
+          <h3 class="project__name">IA generativa local <span class="project__sub">GPU AMD 7900 XT</span></h3>
+          <p class="project__desc">
+            Configuración y ejecución de LLMs de forma local con OpenCode y ROCm sobre GPU AMD:
+            inferencia local, optimización de rendimiento y herramientas open-source de IA.
+          </p>
+          <div class="project__links">
+            <span class="project__nolink mono">experimentación local</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= 04 HABILIDADES ======= -->
+    <section class="section section--tinted" id="habilidades">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 04</span>
+        <h2 class="section__title">Habilidades</h2>
+      </div>
+      <div class="skills">
+        <div class="skills__group reveal">
+          <h3 class="skills__label mono">Lenguajes &amp; herramientas</h3>
+          <ul class="skills__list">
+            <li>Python <span class="skills__note">NumPy · SciPy · Matplotlib · SymPy</span></li>
+            <li>R <span class="skills__note">análisis estadístico · visualización</span></li>
+            <li>MATLAB <span class="skills__note">simulación · control · GSUA</span></li>
+            <li>Java <span class="skills__note">algoritmia</span></li>
+            <li>LaTeX / Overleaf <span class="skills__note">reportes académicos</span></li>
+            <li>Git / GitHub <span class="skills__note">control de versiones</span></li>
+          </ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__label mono">Matemáticas aplicadas</h3>
+          <ul class="skills__list">
+            <li>Optimización convexa y multiobjetivo</li>
+            <li>Estadística inferencial <span class="skills__note">bootstrap · tests de hipótesis</span></li>
+            <li>Sistemas dinámicos y control</li>
+            <li>Teoría de juegos</li>
+            <li>Análisis de sensibilidad <span class="skills__note">Sobol · Saltelli-Jansen</span></li>
+          </ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__label mono">IA &amp; datos</h3>
+          <ul class="skills__list">
+            <li>Redes neuronales <span class="skills__note">POD-NN · PINNs (conceptual)</span></li>
+            <li>LLMs locales <span class="skills__note">OpenCode · ROCm · GPU AMD</span></li>
+            <li>Decisión multicriterio <span class="skills__note">AHP · TOPSIS · VIKOR</span></li>
+            <li>Modelos de riesgo financiero <span class="skills__note">GARCH · VaR · ES</span></li>
+          </ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__label mono">Idiomas</h3>
+          <ul class="skills__list">
+            <li>Español <span class="skills__note">nativo</span></li>
+            <li>Inglés <span class="skills__note">C1 — Aptis General 181/200, British Council</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 05 CERTIFICADOS ======= -->
+    <section class="section" id="certificados">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 05</span>
+        <h2 class="section__title">Certificados</h2>
+      </div>
+
+      <h3 class="subhead mono reveal">Obtenidos</h3>
+      <div class="certs">
+        <article class="cert reveal">
+          <div class="cert__badge mono">C1</div>
+          <div class="cert__body">
+            <h4 class="cert__name">Aptis General — Inglés C1</h4>
+            <p class="cert__issuer mono">British Council · Junio 2026</p>
+            <ul class="cert__scores">
+              <li><span class="mono">Listening</span><b>48/50</b></li>
+              <li><span class="mono">Reading</span><b>46/50</b></li>
+              <li><span class="mono">Speaking</span><b>43/50</b></li>
+              <li><span class="mono">Writing</span><b>44/50</b></li>
+              <li class="cert__total"><span class="mono">Final</span><b>181/200</b></li>
+            </ul>
+            <div class="cert__links">
+              <a href="https://credentials.britishcouncil.org/0bc3dfeb-7d02-4c05-aeff-07ed355551a7?key=28209f5c5c213595fa887c50aa2ed0cf79c04861b46962ecc59456dbe26e8b29" target="_blank" rel="noopener">Verificar credencial ↗</a>
+              <a href="assets/docs/Certificado_Aptis_C1_David_Naranjo.pdf" download>Descargar PDF</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subhead mono reveal">En curso</h3>
+      <div class="certs certs--pending reveal">
+        <div class="cert cert--pending">
+          <div class="cert__badge cert__badge--pending mono">···</div>
+          <div class="cert__body">
+            <h4 class="cert__name">Próxima certificación</h4>
+            <p class="cert__issuer mono">Espacio reservado — en progreso</p>
+            <p class="cert__desc">Esta sección se actualizará a medida que avance cada certificación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 06 DOCUMENTOS ======= -->
+    <section class="section section--tinted" id="documentos">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 06</span>
+        <h2 class="section__title">Documentos</h2>
+      </div>
+      <div class="docs">
+        <a class="doc reveal" href="assets/docs/CV_David_Naranjo.pdf" download>
+          <span class="doc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+          </span>
+          <span class="doc__text">
+            <b>Hoja de vida</b>
+            <span class="mono">CV_David_Naranjo.pdf · 3 páginas</span>
+          </span>
+          <span class="doc__action mono">Descargar ↓</span>
+        </a>
+        <a class="doc reveal" href="assets/docs/Certificado_Aptis_C1_David_Naranjo.pdf" download>
+          <span class="doc__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          </span>
+          <span class="doc__text">
+            <b>Certificado Aptis C1</b>
+            <span class="mono">British Council · Junio 2026</span>
+          </span>
+          <span class="doc__action mono">Descargar ↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======= 07 INTERESES ======= -->
+    <section class="section" id="intereses">
+      <div class="section__head reveal">
+        <span class="section__num mono">§ 07</span>
+        <h2 class="section__title">Intereses</h2>
+      </div>
+      <div class="interests">
+        <article class="interest reveal">
+          <span class="interest__num mono">i.</span>
+          <h3>Hardware de alto rendimiento</h3>
+          <p>He ensamblado y optimizado múltiples PCs de alto rendimiento — del silicio al sistema operativo.</p>
+        </article>
+        <article class="interest reveal">
+          <span class="interest__num mono">ii.</span>
+          <h3>IA generativa &amp; LLMs</h3>
+          <p>Modelos de lenguaje corriendo en local, herramientas open-source y el estado del arte de la IA.</p>
+        </article>
+        <article class="interest reveal">
+          <span class="interest__num mono">iii.</span>
+          <h3>Fútbol</h3>
+          <p>Juego regularmente: trabajo en equipo y lectura del juego que también aplico al ámbito académico.</p>
+        </article>
+        <article class="interest reveal">
+          <span class="interest__num mono">iv.</span>
+          <h3>Gimnasio</h3>
+          <p>Entrenamiento constante — la disciplina de la rutina diaria es la misma que exige la matemática.</p>
+        </article>
+      </div>
+      <figure class="interests__photo reveal">
+        <img src="assets/cuerpo-completo.jpeg" alt="David Naranjo López de cuerpo completo" loading="lazy">
+        <figcaption><span class="mono">fig. 2</span> — Medellín, 2026</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- ======= CONTACTO / FOOTER ======= -->
+  <footer class="footer" id="contacto">
+    <div class="footer__inner">
+      <p class="footer__kicker mono reveal">§ 08 · Contacto</p>
+      <h2 class="footer__title reveal">Hablemos<span class="footer__dot">.</span></h2>
+      <p class="footer__lede reveal">
+        Abierto a prácticas, proyectos de investigación y retos de IA y ciencia de datos.
+      </p>
+      <div class="footer__links reveal">
+        <a href="mailto:naranjolopez1234@gmail.com">naranjolopez1234@gmail.com</a>
+        <a href="tel:+573012446608">+57 301 244 6608</a>
+        <a href="https://github.com/naranjodavid04" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/david-naranjo-914328413/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <div class="footer__meta">
+        <span class="mono">Medellín, Colombia</span>
+        <span class="mono">∇ · David Naranjo López · 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
